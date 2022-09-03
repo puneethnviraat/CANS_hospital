@@ -10418,7 +10418,11 @@ div ~ :last-child .call-to-action-box-layout5 {
   margin-bottom: 30px;
 }
 .footer-box .footer-logo {
-  padding-bottom: 25px;
+  padding: 5px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 .footer-box .footer-about {
   font-size: 17px;
