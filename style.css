@@ -3675,7 +3675,7 @@ ul {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: rgba(57, 108, 240, 0.8);
+  background-color: #41468ca8;
   z-index: 1;
   top: 0;
   left: 0;
