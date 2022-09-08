@@ -7385,8 +7385,8 @@ div ~ :last-child .call-to-action-box-layout5 {
 }
 .single-departments-box-layout1 .item-content .item-specialist .item-img {
   background-color: #f1f7fa;
-  border-radius: 4px;
-  padding: 45px 30px 0px;
+  border-radius: 5px;
+  padding: 10px;
 }
 @media only screen and (max-width: 575px) {
   .single-departments-box-layout1 .item-content .item-specialist .item-img {
@@ -10144,6 +10144,7 @@ div ~ :last-child .call-to-action-box-layout5 {
   width: 100%;
 }
 .widget-department-info ul li a {
+text-transform: capitalize;
   position: relative;
   display: block;
   padding-left: 20px;
@@ -11345,4 +11346,10 @@ div ~ :last-child .call-to-action-box-layout5 {
 .socialIcons{
   display: inline;
   padding: 1%;
+}
+.widget-department-info .nav-item{
+  text-transform: capitalize;
+}
+.single-departments-box-layout1 .item-content p{
+  text-align: justify;
 }

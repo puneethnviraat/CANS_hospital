@@ -653,6 +653,7 @@ CSS INDEX
 =========================================================================*/
 .media-body {
   margin-left: 3rem;
+  min-width: 40%;
 }
 .media-body.space-xl {
   margin-left: 50px;
