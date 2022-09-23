@@ -86,17 +86,32 @@
         <section class="appointment-wrap-layout1 bg-light-accent100">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-xl-6">
+                    <div class="col-md-12">
                         <div class="appointment-box-layout1">
                             <h2 class="title title-bar-primary2">Make an Appointment</h2>
-                            <p>Efficiently myocardinate market-driven innovation via open-source alignments.
-                                Dramatically engage
-                                porescently.</p>
+                            <p>Please fill the below form and submit our team will contact you back.</p>
                             <form>
                                 <div class="row gutters-15">
+                               
                                     <div class="col-12 form-group">
-                                        <select class="select2" data-error="Phone field is required" required>
-                                            <option value="">Select Department *</option>
+                                        <input type="text" placeholder="Patient Name *" class="form-control" name="name"
+                                            id="form-name" data-error="Name field is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" placeholder="Phone *"
+                                         class="form-control" name="Phone" id="form-phone"
+                                            data-error="Phone field is required" maxlength="10" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="email" placeholder="E-mail *" class="form-control" name="email" id="form-email"
+                                            data-error="E-mail field is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-6 form-group">
+                                        <select class="select2" data-error="Phone field is required" >
+                                            <option value="">Select Department </option>
                                             <option value="1">Gynaecology</option>
                                             <option value="2">Cardiology</option>
                                             <option value="3">Orthopaedics</option>
@@ -104,29 +119,14 @@
                                         </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <div class="col-12 form-group">
-                                        <select class="select2" data-error="Phone field is required" required>
-                                            <option value="">Choose Doctor by Name *</option>
+                                    <div class="col-6 form-group">
+                                        <select class="select2" data-error="Phone field is required" >
+                                            <option value="">Choose Doctor by Name </option>
                                             <option value="1">Dr. Name1</option>
                                             <option value="2">Dr. Name2</option>
                                             <option value="3">Dr. Name3</option>
                                             <option value="4">Dr. Name4</option>
                                         </select>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <input type="text" placeholder="Patient Name *" class="form-control" name="name"
-                                            id="form-name" data-error="Name field is required" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input type="text" placeholder="Phone *" class="form-control" name="Phone" id="form-phone"
-                                            data-error="Phone field is required" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input type="email" placeholder="E-mail *" class="form-control" name="email" id="form-email"
-                                            data-error="E-mail field is required" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-sm-6 form-group">
@@ -142,9 +142,9 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-12 form-group">
-                                        <textarea placeholder="Type Appintment Note" class="textarea form-control" name="message"
+                                        <textarea placeholder="Type Appointment Note" class="textarea form-control" name="message"
                                             id="form-message" rows="5" cols="20" data-error="Message field is required"
-                                            required></textarea>
+                                            ></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-12 form-group text-center">
@@ -152,11 +152,6 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="appointment-banner">
-                            <img src="img/figure/figure2.png" alt="appointment" class="img-fluid">
                         </div>
                     </div>
                 </div>

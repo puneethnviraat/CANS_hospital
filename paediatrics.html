@@ -44,6 +44,7 @@
             $(function(){
               $("#header").load("header.html"); 
               $("#footer").load("footer.html"); 
+              $("#Department-list-side").load("Department-list-side.html")
             });
             </script> 
 </head>
@@ -88,43 +89,7 @@
             <div class="container">
                 <div class="row" id="no-equal-gallery">
                     <div class="sidebar-widget-area sidebar-break-md col-xl-3 col-lg-4 col-12 no-equal-item">
-                        <div class="widget widget-department-info">
-                            <h3 class="section-title title-bar-primary">All Departments</h3>
-                            <ul class="nav nav-tabs tab-nav-list">
-                                <li class="nav-item">
-                                    <a  href="orthopaedics.html" data-toggle="tab" aria-expanded="false">Orthopaedics</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a  href="pulmonology.html" data-toggle="tab" aria-expanded="false" >Pulmonology</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#0" data-toggle="tab" aria-expanded="false">Neuro Sciences</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#0" data-toggle="tab" aria-expanded="false">Cardiology & Cardiac Surgery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="gynaecology.html" data-toggle="tab" aria-expanded="false">obstetrics & Gynaecology </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="active" href="#0" data-toggle="tab" aria-expanded="false">Paediatrics & Neonatology  </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="emergency.html" data-toggle="tab" aria-expanded="false">Emergency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#0" data-toggle="tab" aria-expanded="false">Plastic reconstructive aesthetic surgery </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#0" data-toggle="tab" aria-expanded="false">General surgery alied specialities </a>
-                                    <li class="nav-item">
-                                        <a href="#0" data-toggle="tab" aria-expanded="false">Urology</a>
-                                    </li> <li class="nav-item">
-                                        <a href="#0" data-toggle="tab" aria-expanded="false">Gastro sciences </a>
-                                    </li>
-                                </li>
-                            </ul>
-                        </div>
+                        <div id="Department-list-side"></div>
                     </div>
                     <div class="col-xl-9 col-lg-8 col-12 no-equal-item">
                         <div class="tab-content">
