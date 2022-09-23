@@ -7391,7 +7391,7 @@ div ~ :last-child .call-to-action-box-layout5 {
 }
 @media only screen and (max-width: 575px) {
   .single-departments-box-layout1 .item-content .item-specialist .item-img {
-    width: max-content;
+    width: 100%;
   }
 }
 .single-departments-box-layout1 .item-content .item-specialist .media-body .item-title {
