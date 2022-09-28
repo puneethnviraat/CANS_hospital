@@ -5,14 +5,13 @@ $Subject = "New Message Received";
 
 $success = false;
 $errorMSG = array();
-$first_name = $last_name = $email = $phone=  $message = $subject = null;
+$first_name = $last_name = $email = $phone=  $message  = null;
 $fields = array(
     'first_name' => "First name is required ",
     'last_name' => "Last name is required ",
     'email' => "Email is required ",
     'phone' => "Phone is required ",
-    'message' => "Message is required ",
-    'subject' => "Subject is required "
+    'message' => "Message is required "
 );
 
 foreach($fields as $key => $e_message){
