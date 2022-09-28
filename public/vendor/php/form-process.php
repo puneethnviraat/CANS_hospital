@@ -35,7 +35,7 @@ $Body .= "<p><b>Message:</b> </p><p>{$message}</p>";
 // send email
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= 'From:  ' . $name . ' <' . $email .'>' . " \r\n" .
+$headers .= 'From:  ' . $name . " \r\n" .
             'Reply-To: '.  $email . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
