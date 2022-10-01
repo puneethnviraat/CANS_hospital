@@ -498,7 +498,7 @@ ul {
 }
 .top-bar-border-bottom {
   border-bottom: 1px solid #d7d7d7;
-  background-color: #edf3f3;
+  background-color: #00a3ad;
 }
 .header-menu-area:after {
   clear: both;
@@ -1499,7 +1499,7 @@ ul {
 }
 .header-contact-layout1 ul li i {
   margin-right: 10px;
-  color: #41468C;
+  color: #ffffff;
 }
 .header-contact-layout1 ul li:last-child {
   margin-right: 0;
@@ -1638,7 +1638,7 @@ ul {
   margin-right: 0;
 }
 .header-social-layout1 li a {
-  color: #1f1c1c;
+  color: #ffffff;
   text-align: center;
   font-size: 14px;
   display: block;
@@ -11362,6 +11362,51 @@ text-transform: capitalize;
 
 
 .header-contact-layout1 ul li a{
-  color: #41468C;
+  color: #ffffff;
   font-weight: bold;
+}
+.index-btn{
+  margin-top: 40px;
+    padding: 10px 20px;
+    color: #ffffff;
+    margin: 5px;
+    display: inline-block;
+    float: right;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.blue-backgrond{
+  background-color: #183883;
+}
+.green-backgrond{
+  background-color: #00a3ad;
+}
+.green-color{
+  color:#00a3ad !important ;
+}
+.blue-color{
+  color: #183883 !important;
+}
+.white-color{
+  color: #ffffff !important
+}
+.departments-box-layout7_new{
+  padding: 35px !important;
+
+}
+.contact-home .form-group{
+  margin-bottom: 0px !important;
+}
+.Center-of-excellence{
+color:#ffffff
+}
+.contact-home{
+  background-color: #ffffff;
+  padding:10px;
+}
+ h3{
+  padding: 5px;
 }
