@@ -8305,7 +8305,7 @@ div ~ :last-child .call-to-action-box-layout5 {
   position: fixed;
 }
 .comingsoon-page .comingsoon-back-img {
-  background: linear-gradient(0deg, #183883, transparent);
+     background: linear-gradient(0deg, #183883, transparent);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11455,4 +11455,9 @@ color:#ffffff
 .view-more-btn{
   margin: 0 auto;
     
+}
+.coming-soon-content{
+  background: linear-gradient(0deg, #183883, transparent);
+  width: 100%;
+  text-align: center;
 }
