@@ -8305,7 +8305,7 @@ div ~ :last-child .call-to-action-box-layout5 {
   position: fixed;
 }
 .comingsoon-page .comingsoon-back-img {
-  background-image: url('img/figure/coming-soon.jpg');
+  background: linear-gradient(0deg, #183883, transparent);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
