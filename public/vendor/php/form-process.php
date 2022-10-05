@@ -1,6 +1,6 @@
 <?php
 
-$EmailTo = "test@gmail.com";
+$EmailTo = "canshospital1@gmail.com";
 $Subject = "New Message Received";
 
 $success = false;
