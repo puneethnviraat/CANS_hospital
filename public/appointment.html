@@ -198,7 +198,7 @@
                         <div class="appointment-box-layout1">
                             <h2 class="title title-bar-primary2">Make an Appointment</h2>
                             <p>Please fill the below form and submit our team will contact you back.</p>
-                            <form>
+                            <form  method="POST" name="appointmentform" action="appointment-form-handler.php">
                                 <div class="row gutters-15">
                                
                                     <div class="col-12 form-group">
@@ -218,7 +218,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <select class="select2" data-error="Phone field is required" >
+                                        <select name="department" class="select2" data-error="Department field is required" >
                                             <option value="">Select Department </option>
                                             <option value="Anesthesiology">Anesthesiology
                                             </option>
@@ -280,7 +280,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <select class="select2" data-error="Phone field is required" >
+                                        <select name="doctor" class="select2" data-error="doctor field is required" >
                                             <option value="">Choose Doctor by Name </option>
                                             <option value="Dr Abhilash Venkatesh">Dr Abhilash Venkatesh
                                             </option>
@@ -323,14 +323,14 @@
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <i class="far fa-calendar-alt"></i>
-                                        <input type="text" class="form-control rt-date" placeholder="Appointment Date *"
-                                            name="date" id="form-date" data-error="Subject field is required" required />
+                                        <input type="date" class="form-control rt-date" placeholder="Appointment Date "
+                                            name="date" id="form-date" data-error="Subject field is required"  />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <i class="far fa-clock"></i>
-                                        <input type="text" class="form-control rt-time" placeholder="Time *" name="time"
-                                            id="form-time" data-error="Subject field is required" required />
+                                        <input type="time" class="form-control rt-time" placeholder="Time" name="time"
+                                            id="form-time" data-error="Subject field is required"  />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-12 form-group">
@@ -340,7 +340,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-12 form-group text-center">
-                                        <button class="item-btn">Make an Appointment</button>
+                                        <button type="submit" class="item-btn">Make an Appointment</button>
                                     </div>
                                 </div>
                             </form>
