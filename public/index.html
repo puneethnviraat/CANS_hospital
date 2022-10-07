@@ -334,11 +334,11 @@
                     <div class="col-xl-4 col-12">
                         <div class="contact-box-layout1">
                            
-                            <form class="contact-form-box contact-home" id="">
+                            <form class="contact-form-box contact-home"   method="POST" name="contactform" action="contact-form-handler.php">
                                 <h3 class="blue-backgrond text-center white-color">Book Appointment</h3>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" placeholder="Your Name " class="form-control" name="your_name"
+                                        <input type="text" placeholder="Your Name " class="form-control" name="first_name"
                                             data-error="Name is required" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -348,8 +348,8 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="text" placeholder="Phone number" class="form-control" name="phone"
-                                            data-error="Phone is required" required>
+                                        <input type="number" placeholder="Phone number" class="form-control" name="phone"
+                                          maxlength="11"  data-error="Phone is required" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                   

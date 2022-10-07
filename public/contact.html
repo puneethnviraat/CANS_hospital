@@ -195,21 +195,21 @@
                     <div class="col-lg-8">
                         <div class="contact-box-layout1">
                             <h3 class="title title-bar-primary4">Leave Us Message</h3>
-                            <form class="contact-form-box" id="contact-form">
+                            <form class="contact-form-box"   method="POST" name="contactform" action="contact-form-handler.php">
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <input type="text" placeholder="First Name *" class="form-control" name="first_name"
-                                            data-error="Phone field is required" required>
+                                            data-error="Name field is required" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-6 form-group">
                                         <input type="text" placeholder="Last Name *" class="form-control" name="last_name"
-                                            data-error="E-mail field is required" required>
+                                             >
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-6 form-group">
                                         <input type="email" placeholder="E-mail *" class="form-control" name="email"
-                                            data-error="Subject field is required" required>
+                                            data-error="Email field is required" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-6 form-group">
