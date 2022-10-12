@@ -11461,3 +11461,10 @@ color:#ffffff
   width: 100%;
   text-align: center;
 }
+.ceo-img{
+  padding: 20px;
+  float: left; width:42%
+}
+.ceo_sign{
+  text-align:left; font-weight: bold; color: black;
+}

@@ -1,62 +1,50 @@
-<?php 
-$errors = '';
-$myemail = 'canshospital1@gmail.com';//<-----Put Your email address here.
-if(empty($_POST['first_name'])  || 
-   empty($_POST['email']) || 
-   empty($_POST['phone']) || 
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: Please fill the requied fileds";
-}
-
-$name = $_POST['first_name']; 
-$phone = $_POST['phone']; 
-$email_address = $_POST['email']; 
-$department = $_POST['department']; 
-$doctor = $_POST['doctor']; 
-$date = $_POST['date']; 
-$time = $_POST['time']; 
-$message = $_POST['message']; 
-
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
-
-if( empty($errors))
-{
-	$to = $myemail; 
-	$email_subject = "New Appointment booking: $name";
-	$email_body = "You have received a new appointment. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Phone: $phone \n
-	Department: $department \n
-	Doctor: $doctor \n
-	Date: $date \n
-	Time: $time \n
-	 Message: \n $message"; 
-	
-	$headers = "From: $myemail\n"; 
-	$headers .= "Reply-To: $email_address";
-	
-	mail($to,$email_subject,$email_body,$headers);
-	//redirect to the 'thank you' page
-	header('Location: contact-form-thank-you.html');
-} 
-?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
-<html>
-<head>
-	<title>Contact form handler</title>
-</head>
-
-<body>
-<!-- This page is displayed only if there is some error -->
 <?php
-echo nl2br($errors);
-?>
 
+$EmailTo = "canshospital1@gmail.com";
+$Subject = "New appointment Request: $name";
 
-</body>
-</html>
+$success = false;
+$errorMSG = array();
+$name = $name = $email = $phone=  $message = null;
+$fields = array(
+    'name' => "First name is required ",
+    'email' => "Email is required ",
+    'phone' => "Phone is required ",
+    'message' => "Message is required "
+);
+
+foreach($fields as $key => $e_message){
+    if (empty($_POST[$key])) {
+        $errorMSG[] = $e_message;
+    } else {
+        $$key = $_POST[$key];
+    }
+}
+
+$name = $name ;
+
+// prepare email body text
+$Body = null;
+$Body .= "<p><b>Name:</b> {$name}</p>";
+$Body .= "<p><b>Email:</b> {$email}</p>";
+$Body .= "<p><b>Phone:</b> {$phone}</p>";
+$Body .= "<p><b>Message:</b> </p><p>{$message}</p>";
+
+// send email
+$headers = "From: $myemail\n"; 
+	$headers .= "Reply-To: $email_address";
+
+if($name && $email && $message){
+    $success = mail($EmailTo, $Subject, $Body, $headers );
+}
+
+if(empty($errorMSG)){
+    $errorMSG[] = "Something went wrong :(";
+}
+
+echo json_encode(array(
+    'success' => $success,
+    'message' => $errorMSG
+));
+
+die();

@@ -198,7 +198,7 @@
                         <div class="appointment-box-layout1">
                             <h2 class="title title-bar-primary2">Make an Appointment</h2>
                             <p>Please fill the below form and submit our team will contact you back.</p>
-                            <form  method="POST" name="appointmentform" action="appointment-form-handler.php">
+                            <form  method="POST" name="appointmentform" action="appointement-form-handler.php">
                                 <div class="row gutters-15">
                                
                                     <div class="col-12 form-group">
@@ -208,7 +208,7 @@
                                     </div>
                                     <div class="col-md-6 form-group">
                                         <input type="text" placeholder="Phone *"
-                                         class="form-control" name="Phone" id="form-phone"
+                                         class="form-control" name="phone" id="form-phone"
                                             data-error="Phone field is required" maxlength="10" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -272,11 +272,7 @@
                                             </option>
                                             <option value="4">Urology
                                             </option>
-
-
-
-                                            
-                                        </select>
+                                          </select>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-6 form-group">
@@ -323,13 +319,13 @@
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <i class="far fa-calendar-alt"></i>
-                                        <input type="date" class="form-control rt-date" placeholder="Appointment Date "
+                                        <input type="text" class="form-control rt-date" placeholder="Appointment Date "
                                             name="date" id="form-date" data-error="Subject field is required"  />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-sm-6 form-group">
                                         <i class="far fa-clock"></i>
-                                        <input type="time" class="form-control rt-time" placeholder="Time" name="time"
+                                        <input type="text" class="form-control rt-time" placeholder="Time" name="time"
                                             id="form-time" data-error="Subject field is required"  />
                                         <div class="help-block with-errors"></div>
                                     </div>
