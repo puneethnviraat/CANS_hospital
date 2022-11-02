@@ -37,6 +37,15 @@
     <script src="js/modernizr-3.5.0.min.js"></script>
       <!-- jquery-->
       <script src="js/jquery-2.2.4.min.js"></script>
+          <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-248157423-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-248157423-1');
+    </script>
+    <meta name="google-site-verification" content="Q8W-G97dSOWWFqELO3vszn9vcJa_meaxT2G3ExERSOY" />
     <script> 
         $(function(){
           $("#header").load("header.html"); 
@@ -213,7 +222,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <input type="text" placeholder="Phone *" class="form-control" maxlength="11" name="phone"
+                                        <input type="number" placeholder="Phone *" class="form-control" maxlength="11" name="phone"
                                             data-error="Subject field is required" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
