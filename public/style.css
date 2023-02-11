@@ -11473,13 +11473,10 @@ color:#ffffff
 .about-tab{
 min-height: 680px;
 }
-.blog-ino-points li::before{
-
-}
 
 .blog-info-points {
-  list-style-type:disc;
-  margin-left: 5rem;
+  list-style-type:disc !important;
+  margin-left: 5rem !important;
 }
 .blog-info-points li {
   margin: 5px;
@@ -11490,7 +11487,4 @@ min-height: 680px;
 .blog-details h3{
   color: #183883 ;
   font-weight: 500;
-}
-.blog-preview-img img{
-  max-height: 420px !important;
 }
