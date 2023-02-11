@@ -5177,7 +5177,8 @@ div ~ :last-child .call-to-action-box-layout5 {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
 }
 .blog-box-layout4 .item-content .item-title a {
   color: #111111;
@@ -11471,4 +11472,25 @@ color:#ffffff
 }
 .about-tab{
 min-height: 680px;
+}
+.blog-ino-points li::before{
+
+}
+
+.blog-info-points {
+  list-style-type:disc;
+  margin-left: 5rem;
+}
+.blog-info-points li {
+  margin: 5px;
+}
+.blog-details{
+  text-align: justify ;
+}
+.blog-details h3{
+  color: #183883 ;
+  font-weight: 500;
+}
+.blog-preview-img img{
+  max-height: 420px !important;
 }

@@ -289,3 +289,7 @@ textarea {
         page-break-after: avoid;
     }
 }
+.blog-box-layout4{
+    text-align: justify;
+  text-justify: inter-word;
+}
