@@ -7846,6 +7846,25 @@ div ~ :last-child .call-to-action-box-layout5 {
   background-color: #183883;
   padding: 5px;
 }
+.gallery-box-layout2 {
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #183883;
+  padding: 5px;
+  color: #ffffff;
+}
+.gallery-box-layout2 p {
+  text-align: center;
+  color: #ffffff;
+  padding: 3px;
+  font-size: larger;
+  }
 .gallery-box-layout1:after {
   opacity: 0;
   visibility: hidden;
@@ -7865,6 +7884,19 @@ div ~ :last-child .call-to-action-box-layout5 {
   transition: all 0.3s ease-out;
 }
 .gallery-box-layout1 img {
+  width: 100%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.gallery-box-layout2 img {
   width: 100%;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
