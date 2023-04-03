@@ -48,11 +48,10 @@
     gtag('config', 'UA-248157423-1');
     </script>
     <meta name="google-site-verification" content="Q8W-G97dSOWWFqELO3vszn9vcJa_meaxT2G3ExERSOY" />
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
+   
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"ImageObject","url":"https://canshospital.com/Dr-Niranthara.html","image":"https://canshospital.com/img/team/Dr%20Nitranthar_new.jpeg"}
+        
     </script>
 </head>
 
@@ -67,7 +66,7 @@
     <!-- scrollUp End Here -->
     <div id="wrapper" class="wrapper">
         <!-- Header Area Start Here -->
-        <div id="header"></div>
+        <header></header>   
         <!-- Header Area End Here -->
         <!-- Inne Page Banner Area Start Here -->
         <section class="inner-page-banner bg-common inner-page-top-margin" data-bg-image="img/figure/figure2.jpg">
@@ -134,7 +133,7 @@
         </section>
         <!-- Doctors Detail End Here -->
         <!-- Footer Area Start Here -->
-        <div id="footer"></div>
+        <footer></footer>   
         <!-- Footer Area End Here -->
     </div>
     <!-- Plugins js -->
@@ -163,7 +162,24 @@
     <script src="js/smoothscroll.min.js"></script>
     <!-- Custom Js -->
     <script src="js/main.js"></script>
-
+    <script>
+        $(function () {
+            fetch("https://canshospital.com/header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+  fetch("./footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });
+        });
+    </script>
 </body>
 
 </html>
